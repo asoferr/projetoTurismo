@@ -1,0 +1,163 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    min-height: 100vh; /* Garante que o body tenha pelo menos a altura da tela */
+    overflow-x: hidden; /* Evita rolagem horizontal */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../imagens/Zakynthos.-Greece-2.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+    filter: brightness(50%);
+}
+
+
+header {
+    background-color: rgba(0, 100, 0, 0.8); /* Cor verde escura com transparência */
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    position: relative;
+    z-index: 1; /* Garante que o cabeçalho fique acima da imagem de fundo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra sutil para destacar o cabeçalho */
+    border-bottom: 5px solid #004d00; /* Borda inferior para um efeito mais elegante */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem; /* Tamanho maior do título */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto para mais destaque */
+}
+
+nav {
+    margin-top: 0.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1.5rem;
+    font-weight: bold;
+    font-size: 1.1rem; /* Fonte maior para links de navegação */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Transição suave para cor e sombra dos links */
+}
+
+nav a:hover {
+    color: #ffcc00; /* Cor de destaque ao passar o mouse */
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+ }
+
+
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 15px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+    position: relative;
+    z-index: 1;
+}
+
+
+h2 {
+    color: #006400; /* Cor verde escura para os títulos */
+    margin-bottom: 1rem;
+    font-size: 2rem; /* Tamanho do título */
+    border-bottom: 3px solid #006400; /* Linha decorativa abaixo do título */
+    padding-bottom: 0.5rem; /* Espaço abaixo do título */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte serifada para um toque elegante */
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    background-color: white;
+    margin-top: 2rem;
+}
+
+th, td {
+    border: 2px solid #e0e0e0;
+    padding: 15px;
+}
+
+th {
+    background-color: #f9f9f9;
+    color: #333;
+    font-weight: bold;
+}
+
+td img {
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+td a.button {
+    display: inline-block;
+    color: white;
+    background-color: #2c6e49;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid #2c6e49;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+td a.button:hover {
+    background-color: white;
+    color: #2c6e49;
+}
+
+
+footer {
+    background-color: rgba(0, 100, 0, 0.8); /* Cor verde escura com transparência */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    z-index: 1; /* Garante que o rodapé fique acima da imagem de fundo */
+    font-size: 0.9rem; /* Tamanho menor para o texto do rodapé */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil para destacar o rodapé */
+    border-top: 5px solid #004d00; /* Borda superior para um efeito mais elegante */
+}
+
+
+@media (max-width: 768px) {
+    header nav a {
+        font-size: 1rem; 
+    }
+
+    main {
+        padding: 1rem;
+    }
+}
+
+.tabelinha{
+    align-items: center;
+}
